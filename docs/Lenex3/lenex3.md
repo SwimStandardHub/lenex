@@ -1830,9 +1830,19 @@ This element describes one individual or relay record. It is possible to have no
     </tr>
     <tr>
         <td valign=top>status</td>
-        <td valign=top>s</td>
+        <td valign=top>e</td>
         <td valign=top>-</td>
-        <td valign=top>Can be used to add comment about the record, e.g. "Ratification pending by FINA"</td>
+        <td valign=top>State of the record. The following values are allowed:
+        <ul>
+        <li><b>APPROVED:</b> Record is approved and valid. (default value)
+        <li><b>PENDING:</b> Waiting for ratification by the corresponding authority.
+        <li><b><s>INVALID:</s></b> Invalid due ratification failures. <sup>(we recommend not using this)</sup>
+        <li><b><s>APPROVED.HISTORY:</s></b> Valid, but not current record anymore. <sup>(we recommend not using this)</sup>
+        <li><b><s>PENDING.HISTORY:</s></b> Waiting, but not current record anymore. <sup>(we recommend not using this)</sup>
+        <li><b>TARGETTIME:</b> No record yet but a time to define the minimal time for a new record.
+        </ul>
+        <a href="https://github.com/SwimStandardHub/lenex/discussions/13">discussion about the values</a>
+        </td>
     </tr>
 </table>
 
