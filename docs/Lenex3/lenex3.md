@@ -2141,6 +2141,13 @@ This element is used to describe one result of a swimmer or relay team.
         <td valign=top>Reference to the EVENT element using the id attribute.</td>
     </tr>
     <tr>
+        <td valign=top>handicap</td>
+        <td valign=top>e</td>
+        <td valign=top>-</td>
+        <td valign=top>In special cases, the sport class can be different for a single result. Allowed values are the values for standard sport classes. <a href="https://github.com/SwimStandardHub/lenex/issues/5">(#5)</a>
+    </td>
+    </tr>
+    <tr>
         <td valign=top>heatid</td>
         <td valign=top>n</td>
         <td valign=top>-</td>
