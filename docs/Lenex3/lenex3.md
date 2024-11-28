@@ -1041,6 +1041,21 @@ The handicap is used for handicapped athletes.
         </td>
     </tr>
     <tr>
+        <td valign=top>breaststatus</td>
+        <td valign=top>e</td>
+        <td valign=top>-</td>
+        <td valign=top>The state of the sport class for breaststroke. <a href="https://github.com/SwimStandardHub/lenex/issues/9">(#9)</a> Allowed values are:
+        <ul>
+        <li><b>NATIONAL:</b> The sport class is on national level only.
+        <li><b>NEW:</b> The sport class is not yet valid.
+        <li><b>REVIEW:</b> The sport class must be reviewed in this year, but is valid up to the end of the year.
+        <li><b>OBSERVATION:</b> : The sport class need the observation during the meet in order to get the confirmed status.
+        <li><b>CONFIRMED:</b> The sport class is confirmed for international meets.
+        </ul>
+        If there is no value set, the sport class have no official confirmation.
+        </td>
+    </tr>
+    <tr>
         <td valign=top>exception</td>
         <td valign=top>s</td>
         <td valign=top>-</td>
@@ -1056,6 +1071,13 @@ The handicap is used for handicapped athletes.
         </ul>
     </tr>
     <tr>
+        <td valign=top>freestatus</td>
+        <td valign=top>e</td>
+        <td valign=top>-</td>
+        <td valign=top>The state of the sport class for freestyle, backstroke and fly. Same values used as for breaststatus. <a href="https://github.com/SwimStandardHub/lenex/issues/9">(#9)</a>
+        </td>
+    </tr>
+    <tr>
         <td valign=top>medley</td>
         <td valign=top>e</td>
         <td valign=top>r</td>
@@ -1063,6 +1085,13 @@ The handicap is used for handicapped athletes.
         <ul>
         <li><b>0 - 15:</b> standard handicap classes. The number is equal to the sport class (e.g. SM5 - 5)
         </ul>
+    </tr>
+    <tr>
+        <td valign=top>medleystatus</td>
+        <td valign=top>e</td>
+        <td valign=top>-</td>
+        <td valign=top>The state of the sport class for individual medley. Same values used as for breaststatus. <a href="https://github.com/SwimStandardHub/lenex/issues/9">(#9)</a>
+        </td>
     </tr>
 </table>
 
