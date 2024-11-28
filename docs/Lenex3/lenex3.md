@@ -743,6 +743,13 @@ This element contains the information for a single entry of an athlete or a rela
         <td valign=top>Reference to the EVENT element using the id attribute.</td>
     </tr>
     <tr>
+        <td valign=top>handicap</td>
+        <td valign=top>e</td>
+        <td valign=top>-</td>
+        <td valign=top>In special cases, the sport class can be different for a single entry. Allowed values are the values for standard sport classes. <sup>(we recommend not using this)</sup>
+    </td>
+    </tr>
+    <tr>
         <td valign=top>heatid</td>
         <td valign=top>n</td>
         <td valign=top>-</td>
