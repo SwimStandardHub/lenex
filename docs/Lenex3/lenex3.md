@@ -1421,7 +1421,12 @@ This element contains all information of one meet, including events, athletes, r
         <td valign=top>startmethod</td>
         <td valign=top>e</td>
         <td valign=top>-</td>
-        <td valign=top>1 start rule or 2 start rule.</td>
+        <td valign=top>The following values are possible: <a href="https://github.com/SwimStandardHub/lenex/issues/6">(#6)</a>
+        <ul>
+        <li><b>1:</b> one start allowed (default value)
+        <li><b>2:</b> tow starts allowed
+        </ul>
+        </td>
     </tr>
     <tr>
         <td valign=top>swrid</td>
