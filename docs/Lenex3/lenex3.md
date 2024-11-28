@@ -1146,6 +1146,7 @@ The heat is used to define more details in the start list (e.g. schedule).
         <td valign=top>-</td>
         <td valign=top>The status of the heat. Allowed values are:
         <ul>
+        <li><b>SCHEDULED:</b>  The heat is scheduled but not seeded yet. <a href="https://github.com/SwimStandardHub/lenex/issues/8">(#8)</a>
         <li><b>SEEDED:</b> The heat is seeded.
         <li><b>INOFFICIAL:</b> Results are available but not official.
         <li><b>OFFICIAL:</b> Results of the heat are official.
