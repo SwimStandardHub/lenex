@@ -1583,6 +1583,12 @@ This element is used in entries and records for general information about a meet
         <td valign=top>-</td>
         <td valign=top>The state of the city for the meet.</td>
     </tr>
+    <tr>
+        <td valign=top>timing</td>
+        <td valign=top>e</td>
+        <td valign=top>-</td>
+        <td valign=top>The type of timing. See MEET for acceptable values.</td>
+    </tr>
 </table>
 <ol>
 <li id="fn:4">
