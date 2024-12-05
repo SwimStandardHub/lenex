@@ -1046,13 +1046,13 @@ The handicap is used for handicapped athletes.
         <td valign=top>-</td>
         <td valign=top>The state of the sport class for breaststroke. <a href="https://github.com/SwimStandardHub/lenex/issues/9">(#9)</a> Allowed values are:
         <ul>
+        <li><b>NONE:</b> The sport class have no official confirmation. (default value) <a href="https://github.com/SwimStandardHub/lenex/issues/15">(#15)</a>
         <li><b>NATIONAL:</b> The sport class is on national level only.
         <li><b>NEW:</b> The sport class is not yet valid.
         <li><b>REVIEW:</b> The sport class must be reviewed in this year, but is valid up to the end of the year.
         <li><b>OBSERVATION:</b> : The sport class need the observation during the meet in order to get the confirmed status.
         <li><b>CONFIRMED:</b> The sport class is confirmed for international meets.
         </ul>
-        If there is no value set, the sport class have no official confirmation.
         </td>
     </tr>
     <tr>
@@ -2731,4 +2731,5 @@ For the status attribute in ATHLETE there is an additional value: "SUI.STARTSUIS
 ## 8. Version History
 |Date|change or addition|
 |----|----|
+|05. Dec 2024|The enum of HANDICAP.sportclass status changed|
 |22. Nov 2024|Init of this document|
