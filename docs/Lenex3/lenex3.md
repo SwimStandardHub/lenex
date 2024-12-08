@@ -1253,6 +1253,12 @@ This is the root element of every Lenex file which identifies it as a XML file c
         <td valign=top>Contains different type of time standards and qualification times.</td>
     </tr>
     <tr>
+        <td valign=top>created</td>
+        <td valign=top>utc</td>
+        <td valign=top>-</td>
+        <td valign=top>The day and time when this file was created. This value should be used to check whether the data is up to date. <a href="https://github.com/SwimStandardHub/lenex/issues/16">(#16)</a></td>
+    </tr>
+    <tr>
         <td valign=top>revision</td>
         <td valign=top>s</td>
         <td valign=top>-</td>
@@ -2700,6 +2706,13 @@ In a Lenex file, the following data types are used:
         <td valign=top>uid</td>
         <td valign=top>Unique id's are a character (A-Z) followed by a number. Additional separator characters (space, dash, point) are allowed but have no meaning and should be ignored when comparing unique id's. The id's are unique worldwide and are handled by swimrankings.net.</td>
     </tr>
+    <tr>
+        <td valign=top>Universal Sortable Date Time Pattern</td>
+        <td valign=top>utc</td>
+        <td valign=top>Format string for a universal, sortable date and time string, as defined by ISO 8601. The pattern reflects a defined standard. Therefore, it is always the same, regardless of the culture used or the format provider supplied. The custom format string is "yyyy'-'MM'-'dd HH':'mm':'ss'Z'".<br />
+        The string should express a time as Coordinated Universal Time (UTC).<br />
+        Example: <code>2008-04-10 13:30:00Z</code></td>
+    </tr>
 </table>
 
 ### 5.1 Nation codes
@@ -2755,7 +2768,8 @@ For the status attribute in ATHLETE there is an additional value: "SUI.STARTSUIS
 |22. Nov 2024|Init of this document|
 
 ### 8.2 From Version 3.1 to 3.5 
-|Date|change or addition|revision|
-|----|----|----|
-|08. Dec 2024|The attribute LENEX.subversion add.|2024-340|
+|Date|change or addition|revision|issue|
+|----|----|----|----|
+|08. Dec 2024|The attribute LENEX.created add.|2024-340|[(#16)](https://github.com/SwimStandardHub/lenex/issues/16)
+|08. Dec 2024|The attribute LENEX.subversion add.|2024-340|[(#14)](https://github.com/SwimStandardHub/lenex/issues/14)
 |08. Dec 2024|Minor version number changed to version 3.5|
