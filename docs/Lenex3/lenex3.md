@@ -1256,7 +1256,18 @@ This is the root element of every Lenex file which identifies it as a XML file c
         <td valign=top>revision</td>
         <td valign=top>s</td>
         <td valign=top>-</td>
-        <td valign=top>The patch or revision version number of the Lenex format. If this value is missing, the initial version from the attribut <code>version</code> is referenced. <a href="https://github.com/SwimStandardHub/lenex/issues/15">(#15)</a></td>
+        <td valign=top>The patch or revision version number of the Lenex format. If this value is missing, the initial version from the attribut <code>version</code> is referenced.<a href="https://github.com/SwimStandardHub/lenex/issues/15">(#15)</a></td>
+    </tr>
+    <tr>
+        <td valign=top>subversion</td>
+        <td valign=top>e</td>
+        <td valign=top>-</td>
+        <td valign=top>This attribute provides extended information about the version of the documentation used. <a href="https://github.com/SwimStandardHub/lenex/issues/14">(#14)</a> The following values ​​are allowed:
+        <ul>
+        <li><b>COMMUNITY:</b> The Lenex fille follows this community version. (default value)
+        <li><b>SWIMRANKINGS:</b> he Lenex file follows the Version of swimrankings.net.
+        </ul>
+        </td>
     </tr>
     <tr>
         <td valign=top>version</td>
@@ -2735,8 +2746,16 @@ For the status attribute in ATHLETE there is an additional value: "SUI.STARTSUIS
 **(A)** The ATHLETE / RELAY element is not required in a RECORD. None of both elements should be there in such a case.
 
 ## 8. Version History
+
+### 8.1 From Version 3.0 to 3.1 
 |Date|change or addition|
 |----|----|
 |05. Dec 2024|Minor version number changed to version 3.1|
 |05. Dec 2024|The enum of HANDICAP.sportclass status changed|
 |22. Nov 2024|Init of this document|
+
+### 8.2 From Version 3.1 to 3.5 
+|Date|change or addition|revision|
+|----|----|----|
+|08. Dec 2024|The attribute LENEX.subversion add.|2024-340|
+|08. Dec 2024|Minor version number changed to version 3.5|
