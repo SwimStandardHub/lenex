@@ -1,4 +1,4 @@
-# Lenex 3.0 - Technical documentation
+# Lenex 3.1 - Technical documentation
 An international data exchange format for swimming.
 
 ## 1. General
@@ -1046,13 +1046,13 @@ The handicap is used for handicapped athletes.
         <td valign=top>-</td>
         <td valign=top>The state of the sport class for breaststroke. <a href="https://github.com/SwimStandardHub/lenex/issues/9">(#9)</a> Allowed values are:
         <ul>
+        <li><b>NONE:</b> The sport class have no official confirmation. (default value) <a href="https://github.com/SwimStandardHub/lenex/issues/15">(#15)</a>
         <li><b>NATIONAL:</b> The sport class is on national level only.
         <li><b>NEW:</b> The sport class is not yet valid.
         <li><b>REVIEW:</b> The sport class must be reviewed in this year, but is valid up to the end of the year.
         <li><b>OBSERVATION:</b> : The sport class need the observation during the meet in order to get the confirmed status.
         <li><b>CONFIRMED:</b> The sport class is confirmed for international meets.
         </ul>
-        If there is no value set, the sport class have no official confirmation.
         </td>
     </tr>
     <tr>
@@ -1253,11 +1253,17 @@ This is the root element of every Lenex file which identifies it as a XML file c
         <td valign=top>Contains different type of time standards and qualification times.</td>
     </tr>
     <tr>
+        <td valign=top>revision</td>
+        <td valign=top>s</td>
+        <td valign=top>-</td>
+        <td valign=top>The patch or revision version number of the Lenex format. If this value is missing, the initial version from the attribut <code>version</code> is referenced. <a href="https://github.com/SwimStandardHub/lenex/issues/15">(#15)</a></td>
+    </tr>
+    <tr>
         <td valign=top>version</td>
         <td valign=top>s</td>
         <td valign=top>r</td>
-        <td valign=top>The version number of the Lenex format.</td>
-    </tr>
+        <td valign=top>The version number of the Lenex format. The value for this document version is <code>3.1</code><a href="https://github.com/SwimStandardHub/lenex/issues/15">(#15)</a></td>
+    </tr>     
 </table>
 
 ### Element `<MEET />`
@@ -2731,4 +2737,6 @@ For the status attribute in ATHLETE there is an additional value: "SUI.STARTSUIS
 ## 8. Version History
 |Date|change or addition|
 |----|----|
+|05. Dec 2024|Minor version number changed to version 3.1|
+|05. Dec 2024|The enum of HANDICAP.sportclass status changed|
 |22. Nov 2024|Init of this document|
