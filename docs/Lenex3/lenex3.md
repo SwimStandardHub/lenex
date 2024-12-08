@@ -274,6 +274,17 @@ This element contains information about an age range. It is used in events and r
         <td valign=top>A comma separated list of codes of allowed athlete levels.</td>
     </tr>
     <tr>
+        <td valign=top>medals</td>
+        <td valign=top>e</td>
+        <td valign=top>-</td>
+        <td valign=top>The following values are allowed here:
+        <ul>
+        <li><b>NONE:</b> No medals will be awarded in this AGEGROUP. (default value)
+        <li><b>MEDALS:</b> Medals will be awarded in this AGEGROUP.
+        </ul>
+        </td>
+    </tr>
+    <tr>
         <td valign=top>name</td>
         <td valign=top>s</td>
         <td valign=top>-</td>
@@ -854,7 +865,7 @@ This element contains all information of an event. For events with finals, there
         <ul>
         <li><b>NONE:</b> No medals will be awarded in this event round. (default value)
         <li><b>MEDALS:</b> Medals will be awarded in this event round or all AGEGROUPS of this round. In the schedule, this event can be shown as a medal event (for example: finals).
-        <li><b>AGEGROUPS:</b> Medals will only awarded in certain AGEGROUPS. In the schedule, this competition can't be shown as a medal competition (for example: preliminary rounds with medal in certain AGEGROUP's.)
+        <li><b>AGEGROUPS:</b> Medals will only awarded in certain AGEGROUPS. In the schedule, this competition can't be shown as a medal competition (for example: preliminary rounds with medal in certain AGEGROUP's). Please use the attribute <code>medals</code> in AGEGROUP objects.
         </ul>
         </td>
     </tr>
@@ -2782,6 +2793,7 @@ For the status attribute in ATHLETE there is an additional value: "SUI.STARTSUIS
 ### 8.2 From Version 3.1 to 3.5 
 |Date|change or addition|revision|issue|
 |----|----|----|----|
+|08. Dec 2024|The attribute AGEGROUP.medals add.|2024-340|[(#18)](https://github.com/SwimStandardHub/lenex/issues/18)
 |08. Dec 2024|The attribute EVENT.medals add.|2024-340|[(#18)](https://github.com/SwimStandardHub/lenex/issues/18)
 |08. Dec 2024|The attribute LENEX.created add.|2024-340|[(#16)](https://github.com/SwimStandardHub/lenex/issues/16)
 |08. Dec 2024|The attribute LENEX.subversion add.|2024-340|[(#14)](https://github.com/SwimStandardHub/lenex/issues/14)
