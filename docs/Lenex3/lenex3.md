@@ -1,4 +1,4 @@
-# Lenex 3.1 - Technical documentation
+# Lenex 3.5 - Technical documentation (development)
 An international data exchange format for swimming.
 
 ## 1. General
@@ -1262,7 +1262,7 @@ This is the root element of every Lenex file which identifies it as a XML file c
         <td valign=top>version</td>
         <td valign=top>s</td>
         <td valign=top>r</td>
-        <td valign=top>The version number of the Lenex format. The value for this document version is <code>3.1</code><a href="https://github.com/SwimStandardHub/lenex/issues/15">(#15)</a></td>
+        <td valign=top>The version number of the Lenex format. The value for this document version is <code>3.5</code><a href="https://github.com/SwimStandardHub/lenex/issues/15">(#15)</a></td>
     </tr>     
 </table>
 
